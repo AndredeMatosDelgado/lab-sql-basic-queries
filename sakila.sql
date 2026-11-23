@@ -32,11 +32,11 @@ FROM film;
 
 -- 5.
 -- 5.1
-SELECT COUNT(store_id)
+SELECT DISTINCT(COUNT(store_id))
 FROM store;
 
 -- 5.2
-SELECT COUNT(staff_id)
+SELECT DISTINCT(COUNT(staff_id))
 FROM staff;
 
 -- 5.3
