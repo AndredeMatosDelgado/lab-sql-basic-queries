@@ -1,6 +1,6 @@
 -- 1.
 USE sakila;
-SHOW TABLES
+SHOW TABLES;
 
 -- 2.
 SELECT *
@@ -36,19 +36,18 @@ SELECT DISTINCT(COUNT(store_id))
 FROM store;
 
 -- 5.2
-SELECT DISTINCT(COUNT(staff_id))
+SELECT COUNT(staff_id)
 FROM staff;
 
 -- 5.3
-SELECT COUNT(rental_id)
-FROM rental
-WHERE return_date IS NULL;
+SELECT COUNT(inventory_id)
+FROM inventory;
 
-SELECT COUNT(return_date)
+SELECT COUNT(rental_id)
 FROM rental;
 
 -- 5.4
-SELECT DISTINCT(COUNT(first_name))
+SELECT DISTINCT(COUNT(last_name))
 FROM actor;
 
 -- 6.
@@ -61,3 +60,7 @@ LIMIT 10;
 SELECT actor_id, first_name, last_name
 FROM actor
 WHERE first_name LIKE 'SCARLETT';
+
+
+SELECT *
+FROM inventory;
