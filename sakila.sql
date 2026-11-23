@@ -32,16 +32,17 @@ FROM film;
 
 -- 5.
 -- 5.1
-SELECT DISTINCT(COUNT(address_id))
+SELECT COUNT(store_id)
 FROM store;
 
 -- 5.2
-SELECT DISTINCT(COUNT(staff_id))
+SELECT COUNT(staff_id)
 FROM staff;
 
 -- 5.3
 SELECT COUNT(rental_id)
-FROM rental;
+FROM rental
+WHERE return_date IS NULL;
 
 SELECT COUNT(return_date)
 FROM rental;
