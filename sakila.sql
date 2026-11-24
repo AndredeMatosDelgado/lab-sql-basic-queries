@@ -40,14 +40,14 @@ SELECT COUNT(staff_id)
 FROM staff;
 
 -- 5.3
-SELECT DISTINCT(COUNT(inventory_id))
+SELECT COUNT(DISTINCT inventory_id)
 FROM inventory;
 
-SELECT DISTINCT(COUNT(rental_id))
+SELECT COUNT(DISTINCT rental_id)
 FROM rental;
 
 -- 5.4
-SELECT COUNT(DISTINCT(last_name))
+SELECT COUNT(DISTINCT last_name)
 FROM actor;
 
 -- 6.
