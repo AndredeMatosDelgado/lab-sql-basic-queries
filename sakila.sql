@@ -32,7 +32,7 @@ FROM film;
 
 -- 5.
 -- 5.1
-SELECT DISTINCT(COUNT(store_id))
+SELECT COUNT(store_id)
 FROM store;
 
 -- 5.2
@@ -40,14 +40,14 @@ SELECT COUNT(staff_id)
 FROM staff;
 
 -- 5.3
-SELECT COUNT(inventory_id)
+SELECT DISTINCT(COUNT(inventory_id))
 FROM inventory;
 
-SELECT COUNT(rental_id)
+SELECT DISTINCT(COUNT(rental_id))
 FROM rental;
 
 -- 5.4
-SELECT DISTINCT(COUNT(last_name))
+SELECT COUNT(DISTINCT(last_name))
 FROM actor;
 
 -- 6.
