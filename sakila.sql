@@ -40,10 +40,10 @@ SELECT COUNT(staff_id)
 FROM staff;
 
 -- 5.3
-SELECT COUNT(DISTINCT inventory_id)
+SELECT COUNT(DISTINCT film_id)
 FROM inventory;
 
-SELECT COUNT(DISTINCT rental_id)
+SELECT COUNT(DISTINCT inventory_id)
 FROM rental;
 
 -- 5.4
